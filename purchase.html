@@ -1,0 +1,53 @@
+<div class="modal fade" id="PurchaseModal" tabindex="-1" aria-labelledby="PurchaseModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="PurchaseModal-title">PURCHASE</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form action="/API/add_user_purchase" method="post">
+                <!-- Purchase person name -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+                    </div>
+                    <select class="custom-select" name="purchase-user_id" id="purchase-user_id" required>
+                        <option selected>Select</option>
+                        {% for person in people %}
+                        <option value="{{person.id}}">{{person.name}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <!-- Purchase value -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Value</span>
+                    </div>
+                    <input class="form-control" type="number" name="purchase-value" id="purchase-value" value="0" required>
+                </div>
+
+                <!-- Purchase date -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
+                    </div>
+                    <input class="form-control datepicker" type="text" name="purchase-date" id="purchase-date" min="2020-02-20" readonly required>
+                </div>
+
+                <div class="input-group w-100">
+                    <span class="input-group-text w-100" id="inputGroup-sizing-default">Description</span>
+                </div>
+                    <input class="form-control mb-3" style="height: 4rem" name="purchase-description" id="purchase-description" type="text">
+
+                <div class="input-group mb-3 d-flex justify-content-around">
+                    <input class="btn btn-primary w-25" type="submit" value="Save">
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>

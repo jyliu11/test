@@ -1,0 +1,203 @@
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    max-height: max-content;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+div#coffee-table
+{   
+    margin: 1% 2% 0 2%;
+}
+
+div#cash-box
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 2% 0 2%;
+    height: auto;
+    border: none;
+    border-radius: 0;
+}
+
+.cash
+{
+    width: 15rem;
+    height: 10rem;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+
+    background-color: lavender;
+}
+
+.cash input
+{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 400;
+    height: 40%;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 5px solid black;
+    margin: auto 5px;
+}
+
+.cash select
+{
+    text-align: center;
+    font-size: larger;
+    line-height: 15px;
+    border: none;
+    border-radius: 10px;
+    height: 20%;
+    margin: auto 5px; 
+}
+
+.cash button
+{
+    display: inline-flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.cash button svg
+{
+    margin-left: 10px;
+}
+
+#col-name
+{
+    min-width: 175px;
+}
+
+#coffee-table td, #coffee-table th
+{
+    vertical-align: middle;
+    max-height: min-content;
+    max-width: min-content;
+    padding: 2px;
+}
+
+#coffee-table tr:hover
+{
+    background-color: lightskyblue;
+    cursor: pointer;
+}
+
+.user-info div
+{
+    margin: 0 auto;
+}
+
+.user-buttons
+{
+    width: 20%;
+    min-width: min-content;
+}
+
+.header-title
+{
+    display: inline-flex;
+    height: auto;
+    max-width: fit-content;
+    min-width: fit-content;
+    cursor: pointer;
+}
+
+#header-img
+{
+    display: contents;
+    height: auto;
+    width: 150px;
+    min-width: 40px;
+    margin: auto;
+}
+
+#header-img svg
+{
+    object-fit: scale-down;
+    max-height: 70px;
+    min-height: 70px;
+}
+
+#header-title-text
+{
+    margin: auto 0;
+    margin-left: 20px;
+    font-size: 1.8rem;
+}
+
+.header-tools
+{
+    width: 40%;
+    margin: auto 10px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-tools button
+{
+    width: 100%;
+    margin: 5px;
+}
+
+#btn-login
+{
+    width: 8rem;
+    min-width: fit-content;
+    margin-left: auto;
+}
+
+#btn-logout
+{
+    width: max-content;
+    height: min-content;
+    margin: 10px;
+}
+
+#header-filter
+{
+    display: flex;
+    justify-content: space-around;
+    min-width: fit-content;
+    align-items: center;
+}
+
+header
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 1%;
+    height: 5%;
+    max-height: 150px;
+    background-color: lavender;
+    border-bottom: 2px solid lightgray;
+}
+
+main {
+    margin-bottom: 5%;
+}
+
+element {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+.ui-datepicker{
+    z-index: 99999 !important
+};
